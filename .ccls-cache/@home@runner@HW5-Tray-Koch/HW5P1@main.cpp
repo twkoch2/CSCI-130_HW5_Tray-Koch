@@ -1,7 +1,7 @@
 /************************************************************
 Programmer: Tray Koch
 Description: Test loading a *.dat file. Follows the handout EOF_While_FileImport.pdf
-Data Modified: September 20, 2022
+Data Modified: September 21, 2022
 ************************************************************/
 
 #include <iostream>
@@ -54,6 +54,15 @@ int main()
     
   }
 
+  outFile << "Total Number of Cases = " << cumulative_cases << endl;
+  outFile << "Number of Persons Tested = " << count << endl;
+
+  //report prevalence as % with two decimals
+  outFile << fixed << showpoint << setprecision(2);
+  outFile << "The Prevalence is ";
+  outFile << ( (static_cast<double>(cumulative_cases)) /count) * 100;
+  outFile << "%" << endl;
+  
   //close input file
   inFile.close();
 
@@ -61,8 +70,7 @@ int main()
   outFile.close();
   
 
-  cout << "\nTotal Number of Cases = " << cumulative_cases << endl;  //check
-  cout << "Number of Persons Tested = " << count << endl; // check
+
 
 
   
