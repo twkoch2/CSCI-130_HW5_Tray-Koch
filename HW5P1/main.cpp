@@ -37,6 +37,23 @@ int main()
   inFile >> TestResult;
   cout << TestResult << endl;
 
+  while (inFile)
+  {
+      // update number of cases and persons tested
+    cumulative_cases = cumulative_cases + TestResult;
+    count++;  //increment the number of patients
+
+    //read in the next line
+    inFile >> firstName;
+    inFile >> TestResult;
+    
+  }
+
+  inFile.close();  //close file
+
+  cout << "\nTotal Number of Cases = " << cumulative_cases << endl;  //check
+  cout << "Number of Persons Tested = " << count << endl; // check
+
 
   
 
