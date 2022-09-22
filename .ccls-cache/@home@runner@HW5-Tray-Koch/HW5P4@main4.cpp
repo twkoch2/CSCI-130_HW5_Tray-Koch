@@ -16,7 +16,9 @@ int main ()
 
   for (int i = 0; i < 10; i++) //for loop to read in 10 values
   {
-   cin >> A;   
+    cin >> A;   //Kattis input
+    A = A % 42;
+    cout << A;
   }
   
   
