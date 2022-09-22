@@ -27,7 +27,7 @@ int main ()
 
   //start table headers
   cout << "Temperature     Wind Speed     Wind Chill" << endl;
-  cout << "   In ℃         in km/h       Index (WCI)" << endl;
+  cout << "   in ℃          in km/h       Index (WCI)" << endl;
 
 //create nested for loops to calculate all of the required data points
   for (Ta = 2; Ta <= 10; Ta += 4)
@@ -36,7 +36,8 @@ int main ()
       {
         WCI = ( (k1) + ( (0.6125) * (Ta) ) - ( (k2) * (pow(Ws, 0.16)) ) + ( (k3) * (Ta) * (pow(Ws,0.16))) );
 
-
+        cout << setprecision(2) << fixed;
+        cout << setw(8) << Ta << setw (15) << Ws << setw(16) << WCI << endl;
       }
   }
 
