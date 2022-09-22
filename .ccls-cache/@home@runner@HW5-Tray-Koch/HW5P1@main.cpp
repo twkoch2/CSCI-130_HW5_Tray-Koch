@@ -61,7 +61,7 @@ int main()
   outFile << fixed << showpoint << setprecision(2);
   outFile << "The Prevalence is ";
   outFile << ( (static_cast<double>(cumulative_cases)) /count) * 100;
-  outFile << "%" << endl;
+  outFile << " %" << endl;
   
   //close input file
   inFile.close();
@@ -70,10 +70,5 @@ int main()
   outFile.close();
   
 
-
-
-
-  
-
-  
+  return 0;
 }
