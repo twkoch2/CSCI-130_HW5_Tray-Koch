@@ -1,6 +1,6 @@
 /************************************************************
 Programmer: Tray Koch
-Description: This code was created to answer Exercise 5.6 Problem 6 in the Bronson textbook. This questions asks that the user creates a table in C++. This table needs to display wind chill indexes for temps from 2 - 10 degrees C and wind speed from 5 - 11 km/hr for each temperature.
+Description: This code was created to answer Exercise 5.6 Problem 6 in the Bronson textbook. This questions asks that the user create a table in C++. This table needs to display wind chill indexes for temps from 2 - 10 degrees C and wind speed from 5 - 11 km/hr for each temperature.
 Data Modified: September 22, 2022
 ************************************************************/
 
