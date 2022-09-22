@@ -13,6 +13,8 @@ int main ()
 {
   //identify variables
   int dataTemp;
+  int sumData = 0;
+  int counter = 0;
   
   // load input file 
   ifstream inFile; //declare stream variable
@@ -24,6 +26,8 @@ int main ()
       if (dataTemp >= 0)
       {
         // update cumulative value of all data and number of data points loaded
+        sumData = sumData + dataTemp;
+        counter++;
       }
 
       else //the value is negative and we should exit
@@ -32,9 +36,13 @@ int main ()
         cout << "Will not use rest of data..." << endl;
         break;
       }
-      //cout << dataTemp << endl;
+    
     }
 
+  // display rest of data to console
+  cout << "The sum of valid data is: " << sumData << endl;
+  cout << "The number of valid data points is: " << counter << endl;
+  cout << "The average of valid data is: " << (sumData) / (counter) << endl;
   
-  
+  return 0;
 }
