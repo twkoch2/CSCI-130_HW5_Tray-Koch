@@ -1,6 +1,6 @@
 /************************************************************
 Programmer: Tray Koch
-Description: Test loading a *.txt file. Follows the handout FileImport2.pdf This handout outlines that uses of the break function to salvage data when something goes awry.
+Description: Test loading a *.txt file. Follows the handout FileImport2.pdf. This handout outlines that uses of the break function to salvage data when something goes awry in data collection. This code stops reading in data when a negative data point is found.
 Data Modified: September 22, 2022
 ************************************************************/
 
@@ -42,6 +42,7 @@ int main ()
   // display rest of data to console
   cout << "The sum of valid data is: " << sumData << endl;
   cout << "The number of valid data points is: " << counter << endl;
+  //cout << "The average of valid data is: " << ((sumData) / (counter) ) << endl;  
   cout << "The average of valid data is: " << (static_cast<double>(sumData) / (counter) ) << endl;
   
   return 0;
