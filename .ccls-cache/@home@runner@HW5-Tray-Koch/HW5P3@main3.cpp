@@ -7,6 +7,7 @@ Data Modified: September 22, 2022
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <cmath>
 
 
 using namespace std;
@@ -24,5 +25,16 @@ int main ()
   k2= 11.37;
   k3 = 0.3965;
 
-  
+//create nested for loops to calculate all of the required data points
+  for (Ta = 2; Ta <= 10; Ta += 4)
+  {
+    for (Ws = 5; Ws <= 11; Ws += 2)
+      {
+        WCI = ( (k1) + ( (0.6125) * (Ta) ) - ( (k2) * (pow(Ws, 0.16)) ) + ( (k3) * (Ta) * (pow(Ws,0.16))) );
+
+        cout << WCI << endl;
+      }
+  }
+
+  return 0;
 }
