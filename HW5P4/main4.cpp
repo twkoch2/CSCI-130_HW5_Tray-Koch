@@ -37,6 +37,9 @@ int main ()
   
   counter = 10;
   
+  if (arr [0] == arr [1])
+    counter --;
+  
   if (arr [1] == arr [2])
     counter --;
   
@@ -61,13 +64,9 @@ int main ()
   if (arr [8] == arr [9])
     counter --;
   
-  if (arr [9] == arr [10])
-    counter --;
-  
-  if (counter == 10)
-    cout << counter << endl;
-  if (counter != 10)
-    cout << counter - 1 << endl;
+
+  cout << counter << endl;
+ 
   
   
 return 0;  
