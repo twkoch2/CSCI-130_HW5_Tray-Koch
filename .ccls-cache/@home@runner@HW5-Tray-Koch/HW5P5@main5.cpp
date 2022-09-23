@@ -8,7 +8,6 @@ Data Modified: September 22, 2022
 #include <cmath>
 #include <iomanip>
 
-
 using namespace std;
 
 int main ()
@@ -25,7 +24,6 @@ int main ()
   // gather variables defined outside of loop
   cin >> C; //cost per unit area
   cin >> L; //Number of lawns
-  
 
   for (int i = 0; i < L; i++)
   {
@@ -37,7 +35,6 @@ int main ()
   cost = (A) * (C);
 
   cout << setprecision(7) << fixed << cost << endl;
-
 
   return 0;
 }
