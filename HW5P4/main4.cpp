@@ -1,7 +1,7 @@
 /************************************************************
 Programmer: Tray Koch
 Description: This code was created to solve the Kattis problem called Modulo. This program needs to accept 10 numbers (A) as inputs and outputs the how many have a distinct a % 42 value.
-Data Modified: September 22, 2022
+Data Modified: September 23, 2022
 ************************************************************/
 
 #include <iostream>
@@ -21,10 +21,11 @@ int main ()
   for (int i = 0; i < 10; i++) //for loop to read in 10 values
   {
     cin >> A;   //Kattis input
-    (M) = A % 42;
+    M = A % 42;
+    cout << M << endl;
 
-    if ()
-      counter++;
+    for (int a = 0; a < 42; i++)
+      if
     
    
     
