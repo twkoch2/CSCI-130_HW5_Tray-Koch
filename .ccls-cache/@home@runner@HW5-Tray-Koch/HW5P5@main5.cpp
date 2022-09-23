@@ -17,7 +17,19 @@ int main ()
   int L; //number of lawns to sow
   double width; //width of lawn
   double length; // length of lawn
+  double a; //area of single lawn
+  double A = 0; //total area of lawn to sow
 
+  // gather variables defined outside of loop
+  cin >> C; //cost per unit area
+  cin >> L; //Number of lawns
   
+
+  for (int i = 0; i < L; i++)
+  {
+    cin >> width >> length;
+    a = (width) * (length);
+    A = A += a; // increment total area by area of single lawn
+  }
   
 }
