@@ -13,7 +13,7 @@ int main ()
 {
   //declare variables
   int A; //will be input from Kattis
-  int counter; // will count number of distinct outputs
+  int counter = 0; // will count number of distinct outputs
   int M; //modulus value
 
   //declare an array by size
@@ -30,7 +30,7 @@ int main ()
   if (arr[i] = arr [i])
     counter--;
 
-
+  cout << counter + 11 << endl;
   
 return 0;  
 }
