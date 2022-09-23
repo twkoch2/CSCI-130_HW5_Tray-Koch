@@ -6,6 +6,7 @@ Data Modified: September 22, 2022
 
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 
 using namespace std;
@@ -19,6 +20,7 @@ int main ()
   double length; // length of lawn
   double a; //area of single lawn
   double A = 0; //total area of lawn to sow
+  double cost; //total cost of seed
 
   // gather variables defined outside of loop
   cin >> C; //cost per unit area
@@ -31,5 +33,11 @@ int main ()
     a = (width) * (length);
     A = A += a; // increment total area by area of single lawn
   }
-  
+
+  cost = (A) * (C);
+
+  cout << setprecision(7) << fixed << cost << endl;
+
+
+  return 0;
 }
