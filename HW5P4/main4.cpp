@@ -5,10 +5,9 @@ Data Modified: September 23, 2022
 ************************************************************/
 
 #include <iostream>
-#include <string>
 #include <vector>
-#include <algorithm>
-#include <bits/stdc++.h>
+#include <algorithm> //from Bronson textbook
+
 
 using namespace std;
 
@@ -27,16 +26,16 @@ int main ()
   for (i = 0; i < 10; i++) //for loop to read in 10 values
   {
     cin >> A;   //Kattis input
-    arr [i] = A % 42;     
+    arr [i] = A % 42;    //store answers in an array 
   }
   
-  // Sort the vector  
-  sort(arr, arr+10);
+  // Sort the array so that it goes lowest to highest
+  //This simplfifies comparisons to find duplicate answers
+  sort(arr, arr+10); // souce of line: https://www.youtube.com/watch?v=psNKC1LEtq0&feature=emb_logo
 
-  //cout << endl << arr [1] << endl << arr [2] << endl << arr [3] << endl << arr [4] << endl << arr [4] << endl << arr [5] << endl << arr [6] << endl << arr [7] << endl << arr [8] << arr [9] << arr [10] << endl;
+  counter = 10; //remove from counter when duplicates are found
   
-  counter = 10;
-  
+  //brute force method to find duplicates
   if (arr [0] == arr [1])
     counter --;
   
@@ -64,10 +63,8 @@ int main ()
   if (arr [8] == arr [9])
     counter --;
   
-
+  //display output 
   cout << counter << endl;
  
-  
-  
 return 0;  
 }
