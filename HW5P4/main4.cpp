@@ -5,8 +5,10 @@ Data Modified: September 23, 2022
 ************************************************************/
 
 #include <iostream>
-#include <cmath>
+#include <string>
+#include <vector>
 #include <algorithm>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -28,7 +30,10 @@ int main ()
     arr [i] = A % 42;     
   }
   
-  selectionSort (arr[i], 10);
+  // Sort the vector  
+  sort(arr, arr+10);
+
+  //cout << endl << arr [1] << endl << arr [2] << endl << arr [3] << endl << arr [4] << endl << arr [4] << endl << arr [5] << endl << arr [6] << endl << arr [7] << endl << arr [8] << arr [9] << arr [10] << endl;
   
   counter = 10;
   
@@ -59,8 +64,10 @@ int main ()
   if (arr [9] == arr [10])
     counter --;
   
- 
-    
+  if (counter == 10)
+    cout << counter << endl;
+  if (counter != 10)
+    cout << counter - 1 << endl;
   
   
 return 0;  
