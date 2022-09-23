@@ -6,7 +6,6 @@ Data Modified: September 23, 2022
 
 #include <iostream>
 #include <cmath>
-#include <algorithm>
 
 using namespace std;
 
@@ -16,21 +15,22 @@ int main ()
   int A; //will be input from Kattis
   int counter; // will count number of distinct outputs
   int M; //modulus value
+
+  //declare an array by size
+  int i = 10;
+  int arr [i];
  
 
-  for (int i = 0; i < 10; i++) //for loop to read in 10 values
+  for (i = 0; i < 10; i++) //for loop to read in 10 values
   {
     cin >> A;   //Kattis input
-    M = A % 42;
-    cout << M << endl;
-
-    for (int a = 0; a < 42; i++)
-      if
-    
-   
-    
+    arr [i] = A % 42;     
   }
+
+  if (arr[i] = arr [i])
+    counter--;
+
+
   
-  
-  cout << counter << endl;
+return 0;  
 }
