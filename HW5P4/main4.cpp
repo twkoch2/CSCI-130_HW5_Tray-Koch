@@ -6,6 +6,7 @@ Data Modified: September 23, 2022
 
 #include <iostream>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
 
@@ -26,11 +27,41 @@ int main ()
     cin >> A;   //Kattis input
     arr [i] = A % 42;     
   }
-
-  if (arr[i] = arr [i])
-    counter--;
-
-  cout << counter + 11 << endl;
+  
+  selectionSort (arr[i], 10);
+  
+  counter = 10;
+  
+  if (arr [1] == arr [2])
+    counter --;
+  
+  if (arr [2] == arr [3])
+    counter --;
+  
+  if (arr [3] == arr [4])
+    counter --;
+  
+  if (arr [4] == arr [5])
+    counter --;
+  
+  if (arr [5] == arr [6])
+    counter --;
+  
+  if (arr [6] == arr [7])
+    counter --;
+  
+  if (arr [7] == arr [8])
+    counter --;
+  
+  if (arr [8] == arr [9])
+    counter --;
+  
+  if (arr [9] == arr [10])
+    counter --;
+  
+ 
+    
+  
   
 return 0;  
 }
